@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solution</title>
+  <meta name="description" content="Explore LPVTS solar energy solutions: Residential, Commercial, Industrial, Water Heating & Maintenance. Tailored solar systems across Nigeria.">
+  <meta name="keywords" content="solar solutions, residential solar, commercial solar, industrial solar, solar water heating, solar maintenance, Nigeria">
+  <meta property="og:title" content="LPVTS Solar Solutions in Nigeria">
+  <meta property="og:description" content="Tailored solar panel solutions for homes, businesses, and industries in Nigeria.">
+  <meta property="og:image" content="https://lpvtsolutions.com/images/LPVTs%20logo.svg">
+  <meta property="og:url" content="https://lpvtsolutions.com/solutions.html">
+  <link rel="canonical" href="https://lpvtsolutions.com/">
+  <link rel="stylesheet" href="./css/solution.css">
+  <link rel="icon" type="image/x-icon" href="./images/LPVTS favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KSVX4CTK');</script>
+  <!-- End Google Tag Manager -->
+   
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSVX4CTK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+ <div data-component="header"></div>
+
+
+     
+<section class="sec1 my-4">
+  <div class="container">
+    <div class="section animate__animated animate__fadeInUp">
+      <h1 style="color: navy; text-align: center;">Our Solution</h1>
+     <p class="text-center">
+       We offer tailored solar solutions to meet your energy needs, whether you're a homeowner,
+        business owner, or industrial leaderOur solar panel solutions are designed to meet the energy needs of both residential and commercial properties. By harnessing the power of the sun, we provide efficient and sustainable energy alternatives that help reduce electricity costs and minimize carbon footprints. Whether you're looking to power your home, business, or industrial facility, our high-performance solar panels offer a reliable, cost-effective, and eco-friendly solution. Our team of experts works with you to customize the best setup for your needs, ensuring optimal energy production and long-term savings. Embrace a cleaner, greener future with our solar panel solutions.
+      </p>
+      <div class="solution-container" id="solution-container">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<div data-component="footer"></div>
+
+
+<script>
+
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('navbar-shadow', window.scrollY > 10);
+  });
+
+  const solutions = [
+    {
+      title: "Residential Solar Solutions",
+      description: "Affordable solar panels designed to meet the energy needs of homes. Reduce electricity bills and embrace sustainability.",
+      image: "./images/residential.jpeg"
+    },
+    {
+      title: "Commercial Solar Solutions",
+      description: "Custom solar systems for businesses and commercial buildings, helping reduce operating costs and carbon footprint.",
+      image: "./images/commercial.webp"
+    },
+    {
+      title: "Industrial Solar Power",
+      description: "Industrial Solar Power solutions for large-scale energy needs, ensuring efficiency and reliability.",
+      image: "./images/industrial.jpg"
+    },
+    {
+      title: "Solar Water Heating Systems",
+      description: "Eco-friendly water heating solutions using solar energy, ideal for homes and businesses.",
+      image: "./images/water heat.jpg"
+    },
+    {
+      title: "Maintenance & Monitoring",
+      description: "Comprehensive after-installation maintenance and system monitoring to ensure long-term performance.",
+      image: "./images/maintenance.jpg"
+    }
+  ];
+
+  const container = document.getElementById('solution-container');
+
+  solutions.forEach(solution => {
+    const card = document.createElement('div');
+    card.className = 'solution-card animate__animated animate__fadeInUp';
+    card.innerHTML = `
+      <img src="${solution.image}" alt="${solution.title}" class="solution-img">
+      <h3>${solution.title}</h3>
+      <p>${solution.description}</p>
+    `;
+    container.appendChild(card);
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="./main.js"></script>
+
+</body>
+</html>
